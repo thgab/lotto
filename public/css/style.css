@@ -1,0 +1,37 @@
+input[type="checkbox"] {
+    display:none;
+}
+input[type="checkbox"] + label{
+	color: black;
+    border:1px solid black;
+    width: 30px;
+    height: 30px;
+    display:block;
+    line-height:30px;
+    text-align:center;
+    border-radius:15px;
+}
+
+input[type="checkbox"]:checked + label {
+  background-color:green;
+  border:1px solid green;
+  color:white;
+}
+
+input[type="checkbox"] + label.winner {
+  background-color:red;
+  border:1px solid red;
+  color:white;
+}
+
+input[type="checkbox"]:checked + label.winner {
+  background-color:yellow;
+  border:1px solid yellow;
+  color:black;
+}
+div.item{
+	float:left;
+}
+div.item:nth-child(10n+1){
+	clear:left;
+}
